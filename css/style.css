@@ -1,0 +1,52 @@
+header, footer {
+    background-color: rgba(242, 160, 7, 0.300);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    height: 80vh;
+    width: 20vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+fieldset {
+    background-color: rgba(44, 166, 10, 0.300);
+}
+fieldset p {
+    display: inline;
+    margin-left: 25% ;
+    font-weight: bold;
+
+}
+
+img {
+    height: 56vh;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main {
+    background-color: rgba(242, 96, 12, 0.300);
+}
+
+footer{
+    font-size: larger;
+    font-weight: bold;
+}
+
+.clear:hover {
+    background-color:rgba(242, 96, 12, 0.300) ;
+    font-weight: bold;
+}
+
+.clear {
+    margin-left: 35% ;
+}
+
+fieldset legend {
+    background-color: rgba(44, 166, 10, 0.700);
+    border: rgba(0, 0, 0, 0.4) solid;
+}

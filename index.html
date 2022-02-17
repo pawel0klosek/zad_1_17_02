@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico.png" type="image/png">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Kalkulator obliczający BMI</title>
+</head>
+<body>
+    <header>
+        <h1>Kalkulator obliczający BMI</h1>
+    </header>
+    <main>
+        <form oninput="result.value= (parseInt (waga.value)/((parseInt(wzrost.value))*(parseInt(wzrost.value))))*10000">
+            <fieldset>    
+                <legend>Kalkulator BMI</legend>
+                <fieldset>
+                    <legend>Wybierz płeć</legend>
+                    <input type="radio" name="sex" id="m" value="mężczyzna"> mężczyzna
+                    <input type="radio" name="sex" id="k" value="kobieta"> kobieta <br>   
+                </fieldset>
+
+                <input type="number" name="waga" required > Podaj wagę w [kg] <br>
+                <input type="number" name="wzrost" required > Podaj wzrost w [cm] <br>
+                <p>BMI:</p> 
+                <output id="result"></output><br>
+                <button class="clear" type="reset">Wyczyść</button>
+            </fieldset>
+            <img src="assets/img/obrazek-bmi.png" alt="Tabela BMI ze względu na wiek">
+        </form> 
+    </main> 
+    <footer>
+        <section>
+            <p>created by KŁOSIK</p>
+        </section>
+    </footer>
+</body>
+</html>
